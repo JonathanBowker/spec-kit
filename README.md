@@ -19,17 +19,35 @@
 
 ## Table of Contents
 
+- [Table of Contents](#table-of-contents)
 - [🤔 What is Spec-Driven Development?](#-what-is-spec-driven-development)
 - [⚡ Get Started](#-get-started)
+  - [1. Install Specify CLI](#1-install-specify-cli)
+  - [2. Initialize a project](#2-initialize-a-project)
+  - [3. Establish project principles](#3-establish-project-principles)
+  - [4. Create the spec](#4-create-the-spec)
+  - [5. Create a technical implementation plan](#5-create-a-technical-implementation-plan)
+  - [6. Break down into tasks](#6-break-down-into-tasks)
+  - [7. Execute implementation](#7-execute-implementation)
 - [📽️ Video Overview](#️-video-overview)
 - [🌍 Community](#-community)
 - [🤖 Supported AI Coding Agent Integrations](#-supported-ai-coding-agent-integrations)
+- [Available Slash Commands](#available-slash-commands)
+  - [Core Commands](#core-commands)
+  - [Optional Commands](#optional-commands)
 - [🔧 Specify CLI Reference](#-specify-cli-reference)
-- [🧩 Making Spec Kit Your Own: Extensions & Presets](#-making-spec-kit-your-own-extensions--presets)
+- [🧩 Making Spec Kit Your Own: Extensions \& Presets](#-making-spec-kit-your-own-extensions--presets)
+  - [Extensions — Add New Capabilities](#extensions--add-new-capabilities)
+  - [Presets — Customize Existing Workflows](#presets--customize-existing-workflows)
 - [📦 Bundles: Role-Based Setups](#-bundles-role-based-setups)
+  - [When to Use Which](#when-to-use-which)
 - [📚 Core Philosophy](#-core-philosophy)
 - [🌟 Development Phases](#-development-phases)
 - [🎯 Experimental Goals](#-experimental-goals)
+  - [Technology independence](#technology-independence)
+  - [Enterprise constraints](#enterprise-constraints)
+  - [User-centric development](#user-centric-development)
+  - [Creative \& iterative processes](#creative--iterative-processes)
 - [🔧 Prerequisites](#-prerequisites)
 - [📖 Learn More](#-learn-more)
 - [💬 Support](#-support)
@@ -47,21 +65,17 @@ Spec-Driven Development **flips the script** on traditional software development
 Requires **[uv](https://docs.astral.sh/uv/)** ([install uv](./docs/install/uv.md)). Replace `vX.Y.Z` with the latest release tag from [Releases](https://github.com/github/spec-kit/releases) — keep the leading `v` (for example, `v0.12.11`, not `0.12.11`):
 
 ```bash
-uv tool install specify-cli --from git+https://github.com/github/spec-kit.git@vX.Y.Z
+uv tool install specify-cli --from +https://github.com/JonathanBowker/spec-kit.git@vX.Y.Z
 ```
 
 Prefer installing from PyPI? The `specify-cli` package is also published there:
-
-```bash
-uv tool install specify-cli
-```
 
 See the [Installation Guide](./docs/installation.md) for alternative methods, verification, upgrade, and troubleshooting.
 
 ### 2. Initialize a project
 
 ```bash
-specify init my-project --integration copilot
+specify init my-project --integration codex --ignore-agent-tools
 cd my-project
 ```
 
