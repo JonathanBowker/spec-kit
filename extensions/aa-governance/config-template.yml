@@ -1,0 +1,45 @@
+# Advanced Analytica governance configuration
+
+naming:
+  pattern: "{client-prefix}-{product-or-domain}-{function}"
+  internal_prefix: "aa"
+  client_prefixes:
+    - "aa"
+    - "pwc"
+    - "disney"
+  product_or_domain_vocabulary:
+    - "brand-oracle"
+    - "disambiguation"
+    - "risko"
+    - "adverse-news"
+  function_vocabulary:
+    - "pipeline"
+    - "mcp"
+    - "spec"
+    - "frontend"
+
+labels:
+  domain:
+    - "domain:brand-governance"
+    - "domain:risk-intelligence"
+    - "domain:disambiguation"
+    - "domain:adverse-news"
+  client:
+    - "client:pwc"
+    - "client:disney"
+    - "client:internal"
+  product:
+    - "product:brand-oracle"
+    - "product:risko"
+    - "product:atomiser"
+    - "product:signal-harvester"
+  status:
+    - "status:speccing"
+    - "status:building"
+    - "status:testing"
+    - "status:deployed"
+    - "status:paused"
+
+notes:
+  - "Replace all example values with the production-approved Advanced Analytica vocabulary."
+  - "The labelling command reads this file first, then falls back to constitution.md if the config is absent."

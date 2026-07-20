@@ -1,0 +1,28 @@
+schema_version: "1.0"
+
+preset:
+  id: "aa-governance"
+  name: "Advanced Analytica Governance"
+  version: "1.0.0"
+  description: "Append Advanced Analytica repo naming and labelling governance to the project constitution"
+  author: "Advanced Analytica"
+  repository: "https://github.com/Jonny-Bowker/spec-kit"
+  license: "MIT"
+
+requires:
+  speckit_version: ">=0.9.0"
+
+provides:
+  templates:
+    - type: "template"
+      name: "constitution-template"
+      file: "templates/constitution-template.md"
+      description: "Append Advanced Analytica governance principles to the constitution template"
+      strategy: "append"
+
+tags:
+  - "advanced-analytica"
+  - "governance"
+  - "constitution"
+  - "naming"
+  - "labels"

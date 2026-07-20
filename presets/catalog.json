@@ -1,8 +1,32 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-04-24T00:00:00Z",
+  "updated_at": "2026-07-20T00:00:00Z",
   "catalog_url": "https://raw.githubusercontent.com/github/spec-kit/main/presets/catalog.json",
   "presets": {
+    "aa-governance": {
+      "name": "Advanced Analytica Governance",
+      "id": "aa-governance",
+      "version": "1.0.0",
+      "description": "Append Advanced Analytica repo naming and labelling governance to the project constitution",
+      "author": "Advanced Analytica",
+      "repository": "https://github.com/Jonny-Bowker/spec-kit",
+      "license": "MIT",
+      "bundled": true,
+      "requires": {
+        "speckit_version": ">=0.9.0"
+      },
+      "provides": {
+        "commands": 0,
+        "templates": 1
+      },
+      "tags": [
+        "advanced-analytica",
+        "governance",
+        "constitution",
+        "naming",
+        "labels"
+      ]
+    },
     "lean": {
       "name": "Lean Workflow",
       "id": "lean",

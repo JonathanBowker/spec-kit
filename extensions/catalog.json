@@ -1,8 +1,24 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-07-17T00:00:00Z",
+  "updated_at": "2026-07-20T00:00:00Z",
   "catalog_url": "https://raw.githubusercontent.com/github/spec-kit/main/extensions/catalog.json",
   "extensions": {
+    "aa-governance": {
+      "name": "Advanced Analytica Governance",
+      "id": "aa-governance",
+      "version": "1.0.0",
+      "description": "Repository naming validation before init and GitHub labelling proposals after task generation for Advanced Analytica teams",
+      "author": "Advanced Analytica",
+      "repository": "https://github.com/Jonny-Bowker/spec-kit",
+      "bundled": true,
+      "tags": [
+        "advanced-analytica",
+        "governance",
+        "naming",
+        "labels",
+        "github"
+      ]
+    },
     "agent-context": {
       "name": "Coding Agent Context",
       "id": "agent-context",

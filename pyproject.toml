@@ -40,6 +40,7 @@ packages = ["src/specify_cli"]
 "scripts/bash" = "specify_cli/core_pack/scripts/bash"
 "scripts/powershell" = "specify_cli/core_pack/scripts/powershell"
 # Bundled extensions (installable via `specify extension add <name>`)
+"extensions/aa-governance" = "specify_cli/core_pack/extensions/aa-governance"
 "extensions/git" = "specify_cli/core_pack/extensions/git"
 "extensions/agent-context" = "specify_cli/core_pack/extensions/agent-context"
 "extensions/assess" = "specify_cli/core_pack/extensions/assess"
@@ -47,6 +48,7 @@ packages = ["src/specify_cli"]
 # Bundled workflows (auto-installed during `specify init`)
 "workflows/speckit" = "specify_cli/core_pack/workflows/speckit"
 # Bundled presets (installable via `specify preset add <name>` or `specify init --preset <name>`)
+"presets/aa-governance" = "specify_cli/core_pack/presets/aa-governance"
 "presets/lean" = "specify_cli/core_pack/presets/lean"
 
 [project.optional-dependencies]

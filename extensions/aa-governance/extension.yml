@@ -1,0 +1,46 @@
+schema_version: "1.0"
+
+extension:
+  id: aa-governance
+  name: "Advanced Analytica Governance"
+  version: "1.0.0"
+  description: "Repository naming validation before init and GitHub labelling proposals after task generation for Advanced Analytica teams"
+  category: "process"
+  effect: "read-write"
+  author: "Advanced Analytica"
+  repository: "https://github.com/Jonny-Bowker/spec-kit"
+  license: "MIT"
+
+requires:
+  speckit_version: ">=0.9.0"
+  commands:
+    - "speckit.tasks"
+
+provides:
+  commands:
+    - name: "speckit.aa-governance.name-repo"
+      file: "commands/speckit.aa-governance.name-repo.md"
+      description: "Validate or propose an Advanced Analytica repository name before running specify init"
+    - name: "speckit.aa-governance.label-repo"
+      file: "commands/speckit.aa-governance.label-repo.md"
+      description: "Propose and optionally apply Advanced Analytica GitHub labels from spec, plan, and tasks"
+
+  config:
+    - name: "aa-governance-config.yml"
+      template: "config-template.yml"
+      description: "Advanced Analytica governance vocabulary and label taxonomy"
+      required: false
+
+hooks:
+  after_tasks:
+    command: "speckit.aa-governance.label-repo"
+    optional: true
+    prompt: "Review and apply Advanced Analytica governance labels now?"
+    description: "Propose and optionally apply GitHub labels after tasks are generated"
+
+tags:
+  - "advanced-analytica"
+  - "governance"
+  - "naming"
+  - "labels"
+  - "github"
